@@ -1,0 +1,4 @@
+select sum(CITY.POPULATION) as total_population
+from CITY
+join COUNTRY on CITY.COUNTRYCODE = COUNTRY.CODE
+where COUNTRY.CONTINENT = 'ASIA'
